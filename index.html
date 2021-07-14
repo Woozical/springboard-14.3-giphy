@@ -10,11 +10,14 @@
 </head>
 
 <body>
+  <h1>Giphy Party</h1>
   <form id='search-form'>
-    <input type='text' name='searchField'>
+    <input type='text' name='searchField' placeholder="Search for...">
     <input type='submit' value='Search'>
+    <button id='delete'>Remove</button>
   </form>
-  <div id='results'></div>
+  <div id='results'>
+  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
   <script src="app.js"></script>
