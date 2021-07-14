@@ -1,5 +1,4 @@
 const key = 'dl3Nguz5OZ7Pgmijm5sJcE6ow0PAx0R0';
-let globalGif;
 console.log("Let's get this party started!");
 
 async function searchGifs(key, searchTerm){
@@ -10,8 +9,7 @@ async function searchGifs(key, searchTerm){
     });
     console.log(response.data);
     const randomGif = randomChoice(response.data.data);
-    console.log(randomGif);
-    //appendGif(randomGif.images['downsized medium'].url);
+    appendGif(randomGif.images['downsized_medium'].url);
 }
 
 function appendGif(url){
